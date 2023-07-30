@@ -1,4 +1,5 @@
-/* Hero Section: Mobile */
+/* ======= Hero Section =======*/
+/* Mobile */
 .hero-container--mobile {
   margin-top: 60px;
 
@@ -44,7 +45,7 @@
   }
 }
 
-/* Hero Section: Desktop */
+/* Desktop */
 .hero-container--desktop {
   display: none;
 
@@ -95,7 +96,7 @@
   padding: 6px 15px;
 }
 
-/* Navigation Section */
+/* ======= Navigation=======*/
 nav.nav {
   display: none;
 
@@ -174,8 +175,8 @@ nav.nav {
   margin-bottom: -20px;
 }
 
-/* First Section */
-.section-img-backdrop {
+/* ======= First Section =======*/
+#first-trimester .section-img-backdrop {
   position: absolute;
   left: 0;
   top: 5px;
@@ -183,26 +184,20 @@ nav.nav {
   width: 20%;
 }
 
-.section-img {
+#first-trimester .section-img {
   width: 97%;
   margin-left: auto;
   z-index: 2;
 }
 
+/* Mobile */
 .first-section--mobile .section-img-container {
   display: flex;
   position: relative;
   margin: 0 10vw 30px;
 }
 
-.first-section--desktop {
-  margin: 0 18vw;
-
-  @media (min-width: 1300px) {
-    margin: 0 220px;
-  }
-}
-
+/* Desktop */
 .first-section--desktop .section-content {
   display: grid;
   grid-template-columns: 40% 5% 55%;
@@ -225,4 +220,84 @@ nav.nav {
   position: relative;
   grid-column: 2 / 4;
   grid-row: 1 / 2;
+}
+
+/* ======= Second Section =======*/
+#second-trimester {
+  background-color: var(--background-pink);
+  padding: 40px 0;
+  margin: 25px 0 0;
+
+  @media (min-width: 768px) {
+    margin: 40px 0 0;
+  }
+}
+
+/* Mobile */
+.second-section--mobile .section-img-container {
+  display: flex;
+  position: relative;
+  margin: 0 10vw 30px;
+}
+
+.second-section--mobile .section-img {
+  width: 97.5%;
+  margin-right: auto;
+  z-index: 2;
+}
+
+.second-section--mobile .section-img-backdrop {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  height: 95%;
+  width: 60%;
+  transform: translateY(12px);
+}
+
+/* Desktop */
+.second-section--desktop .section-content {
+  display: grid;
+  grid-template-columns: 52% 2% 46%;
+  grid-template-rows: 92% 8%;
+}
+
+.second-section--desktop .section-img {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.second-section--desktop .section-content--right-column {
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+  display: grid;
+  grid-template-rows: 30% 70%;
+}
+
+.second-section--desktop .section-copy {
+  width: 80%;
+  margin-left: 50px;
+}
+
+.second-section--desktop .section-img-container {
+  display: flex;
+  position: relative;
+}
+
+.second-section--desktop .section-img {
+  width: 97.5%;
+  margin-right: auto;
+  z-index: 2;
+}
+
+.second-section--desktop .section-img-backdrop {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  height: 95%;
+  width: 60%;
+  transform: translateY(5px);
 }

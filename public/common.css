@@ -31,6 +31,11 @@ body {
 
   @media (min-width: 768px) {
     display: block;
+    margin: 0 18vw;
+
+    @media (min-width: 1300px) {
+      margin: 0 220px;
+    }
   }
 }
 
